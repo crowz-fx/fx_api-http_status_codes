@@ -46,16 +46,35 @@ insert into status_codes(code, name, description) values(308, "Permanent Redirec
 -- 400's - Client Errors
 --
 --
-insert into status_codes(code, name, description) values(, "", "");
-insert into status_codes(code, name, description) values(, "", "");
-insert into status_codes(code, name, description) values(, "", "");
-insert into status_codes(code, name, description) values(, "", "");
-insert into status_codes(code, name, description) values(, "", "");
-insert into status_codes(code, name, description) values(, "", "");
-insert into status_codes(code, name, description) values(, "", "");
-insert into status_codes(code, name, description) values(, "", "");
-insert into status_codes(code, name, description) values(, "", "");
-insert into status_codes(code, name, description) values(, "", "");
+insert into status_codes(code, name, description) values(400, "Bad Request", "Server cannot or is refusing to process due to blatant client error i.e. malformed syntax");
+insert into status_codes(code, name, description) values(401, "Unauthorised", "Used when authentication is required but has either failed or not yet been provided");
+insert into status_codes(code, name, description) values(402, "Payment Required", "Future use reservation; some clients use this as a 'failed payment' indicator");
+insert into status_codes(code, name, description) values(403, "Forbidden", "Request was valid and actionable but the server is refusing to action");
+insert into status_codes(code, name, description) values(404, "Not Found", "Requested resource was not found but maybe be there in the future");
+insert into status_codes(code, name, description) values(405, "Method Not Allowed", "Use of the wrong HTTP request method for a given resource i.e. using a POST when only GET is accepted");
+insert into status_codes(code, name, description) values(406, "Not Acceptable", "The requested resource cannot produce the content asked for using the Accept headers sent in the request");
+insert into status_codes(code, name, description) values(407, "Proxy Authentication Required", "Client must first auththenticate with the proxy");
+insert into status_codes(code, name, description) values(408, "Request Timeout", "The server timed out waiting for the request");
+insert into status_codes(code, name, description) values(409, "Conflict", "There is a conflict on the resource in the current state");
+insert into status_codes(code, name, description) values(410, "Gone", "Indicator that means the resource is no longer accessible and never will be again");
+insert into status_codes(code, name, description) values(411, "Length Required", "The request did not specify it's content length which is mandatory by the requested resource");
+insert into status_codes(code, name, description) values(412, "Precondition Failed", "The server does not meet one of the preconditions that the requester put on the request header fields");
+insert into status_codes(code, name, description) values(413, "Payload Too Large", "Request is larger than the server is willing to process");
+insert into status_codes(code, name, description) values(414, "URI Too Long", "The provided URI was too long for the server to process");
+insert into status_codes(code, name, description) values(415, "Unsupported Media Type", "Request entity has a media type which is unknown to the server or unsupported");
+insert into status_codes(code, name, description) values(416, "Range Not Satifiable", "The client has requested a byte serving that does not exist i.e. the 5th part of a 4-part download block");
+insert into status_codes(code, name, description) values(417, "Expectation Failed", "The Expect request-header field is not met by the server");
+insert into status_codes(code, name, description) values(418, "I'm a Teapot", "April Fools joke in RFC2324 which is meant to be for a code a teapot will return when requested to brew coffee");
+insert into status_codes(code, name, description) values(421, "Misdirected Request", "Request was sent to a server that is not able to produce a response");
+insert into status_codes(code, name, description) values(422, "Uprocessable Entity", "Well-formed request by semantically was wrong, please fix");
+insert into status_codes(code, name, description) values(423, "Locked", "Resource is locked and you don't have the key");
+insert into status_codes(code, name, description) values(424, "Failed Dependency", "The request is dependent on another request by that failed");
+insert into status_codes(code, name, description) values(425, "Too Early", "Server is not willing to process a request that may be replayed");
+insert into status_codes(code, name, description) values(426, "Upgrade Required", "Client should switch/upgrade to a different protocol given in the Upgrade header field");
+insert into status_codes(code, name, description) values(428, "Precondition Required", "This is intdended to reduce/remove the conflict between race-conditions of multiple requests accessing and modifying the same resource");
+insert into status_codes(code, name, description) values(429, "Too Many Requests", "Use for rate-limiting; i.e. the user has sent too many requests within a given timeperiod");
+insert into status_codes(code, name, description) values(431, "Request Header Fields Too Large", "One or many header fields are too large and hgence the server is refusing to process the request");
+insert into status_codes(code, name, description) values(451, "Unavailable for Legal Reasons", "The operator of the server has recieved a legal demand to deny access to a resource(s) including the requested one");
 
 --
 --
