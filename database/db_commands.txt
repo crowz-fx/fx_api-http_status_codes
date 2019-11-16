@@ -1,0 +1,38 @@
+CREATE TABLE status_codes(code integer PRIMARY KEY, name TEXT NOT NULL, description TEXT NOT NULL);
+
+--
+--
+-- 100's - Information
+--
+--
+insert into status_codes(code, name, description) values(100, "Continue", "Server has received the request headers and the client should continue with the request body");
+insert into status_codes(code, name, description) values(101, "Protocol Switching", "Requester has asked and server has accepted to switch protocols i.e. move from HTTP/1.1 to HTTP/2 connection");
+insert into status_codes(code, name, description) values(102, "Processing", "Server has already received the request and is processing, no response has been generated yet");
+insert into status_codes(code, name, description) values(103, "Early Hints", "Ability to get some response headers from the server before the final HTTP response is ready");
+
+--
+--
+-- 200's - Success
+--
+--
+insert into status_codes(code, name, description) values(200, "OK", "Standard response for successful HTTP requests");
+insert into status_codes(code, name, description) values(201, "Created", "Request has been actioned and resulted in the creation of a new resource");
+insert into status_codes(code, name, description) values(202, "Accepted", "Server has accepted the request, but processing has not been completed");
+insert into status_codes(code, name, description) values(203, "Non-Authorative Information", "Server is a transforming-proxy that received a 200/OK from its origin but is returning a modified response");
+insert into status_codes(code, name, description) values(204, "Content Blank", "Request processed successfully by server and it not returning any content");
+insert into status_codes(code, name, description) values(205, "Content Reset Request", "Request processed successfully by server and it not returning any content, unlike 204; the response is requesting the requester to reset the document view");
+insert into status_codes(code, name, description) values(206, "Partial Content", "Server is responding with part of the resource due to a ranger header sent by the client i.e. splitting a download into multiple concurrent streams");
+insert into status_codes(code, name, description) values(207, "Multi-Status", "Response message body is XML by type but can contain multiple nested status codes dependent on the number of sub-requests submitted");
+insert into status_codes(code, name, description) values(208, "Already Reported", "207 Multi-Status has already been produced and hence not being included again; see RFC5842 for more information");
+insert into status_codes(code, name, description) values(226, "IM Used", "Response representation consists of one->many instance-manipulations of the current instance; see RFC3229 for more information");
+
+--
+--
+-- 300's - Redirection
+--
+--
+insert into status_codes(code, name, description) values(, "", "");
+insert into status_codes(code, name, description) values(, "", "");
+insert into status_codes(code, name, description) values(, "", "");
+insert into status_codes(code, name, description) values(, "", "");
+insert into status_codes(code, name, description) values(, "", "");
