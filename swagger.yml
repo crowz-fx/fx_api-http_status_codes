@@ -1,0 +1,58 @@
+swagger: "2.0"
+info:
+    description: API that describes and serves all of the HTTP status codes
+    version: "0.0.1"
+    title: CrowzFX HTTP Status Codes API
+consumes:
+    - "application/json"
+produces:
+    - "application/json"
+
+basePath: "/http-status-codes/api"
+
+paths:
+    /all:
+        get:
+            operationId: "handler.return_all_codes"
+            tags:
+                - "All Codes"
+            summary: "GET All HTTP codes"
+            description: "Read all of the HTTP stored status codes"
+            responses:
+                200:
+                    description: "Successful status fetch operation"
+                    schema:
+                        type: "array"
+                        items:
+                            properties:
+                                code:
+                                    type: integer
+                                name:
+                                    type: string
+                                description:
+                                    type: string
+    /status-code:
+        get:
+            operationId: "handler.return_one_code"
+            tags:
+                - A Status Code
+            summary: GET a specific HTTP code
+            description: Read a specific status code
+            #parameters:
+            #    - name: http-code
+            #        in: path
+            #        description: The HTTP status code to lookup
+            #        type: string
+            #        required: True
+            responses:
+                200:
+                    description: "Successful status fetch operation"
+                    schema:
+                        type: object
+                        properties:
+                            code:
+                                type: integer
+                            name:
+                                type: string
+                            description:
+                                type: string
