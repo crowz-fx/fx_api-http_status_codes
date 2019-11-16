@@ -62,13 +62,14 @@ insert into status_codes(code, name, description) values(, "", "");
 -- 500's - Server Errors
 --
 --
-insert into status_codes(code, name, description) values(, "", "");
-insert into status_codes(code, name, description) values(, "", "");
-insert into status_codes(code, name, description) values(, "", "");
-insert into status_codes(code, name, description) values(, "", "");
-insert into status_codes(code, name, description) values(, "", "");
-insert into status_codes(code, name, description) values(, "", "");
-insert into status_codes(code, name, description) values(, "", "");
-insert into status_codes(code, name, description) values(, "", "");
-insert into status_codes(code, name, description) values(, "", "");
-insert into status_codes(code, name, description) values(, "", "");
+insert into status_codes(code, name, description) values(500, "Internal Server Error", "Generic error message given when an unexpected condition was encountered");
+insert into status_codes(code, name, description) values(501, "Not Implemented", "Either the server does not recognise the request method i.e. GET or cannot execute; typically used in placeholder for future implementation");
+insert into status_codes(code, name, description) values(502, "Bad Gateway", "Server is acting as a proxy or gateway and received an invalid upstream response");
+insert into status_codes(code, name, description) values(503, "Service Unavailable", "The server cannot handle the request due to either being down for maintenance or being overloaded");
+insert into status_codes(code, name, description) values(504, "Gateway Timeout", "Server is acting as a proxy or gateway and didn't recieve a timely upstream response");
+insert into status_codes(code, name, description) values(505, "HTTP Version not Supported", "Server does not support the HTTP method specified in the request");
+insert into status_codes(code, name, description) values(506, "Variant Also Negotiates", "Content negotiaton results in a circular reference");
+insert into status_codes(code, name, description) values(507, "Insufficient Storage", "Server does not have enough space to store the representation to complete the request");
+insert into status_codes(code, name, description) values(508, "Loop Detected", "Whilst processing the server detected an infinite loop");
+insert into status_codes(code, name, description) values(510, "Not Extended", "Further extensions to the request are required before it can be completed");
+insert into status_codes(code, name, description) values(511, "Network Authentication Required", "Client authentication is required before access; example being Wi-Fi hotspots requesting you accept the ToS before you can connect");
