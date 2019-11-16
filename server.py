@@ -46,5 +46,5 @@ def info():
 
 # start up of the server app instance
 if __name__ == '__main__':
-    app.add_api('swagger.yml')
+    app.add_api(base_dir + 'swagger.yml')
     app.run(debug = debug_through_app, host = host_ip, port = port)
