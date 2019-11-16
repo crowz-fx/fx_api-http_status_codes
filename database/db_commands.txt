@@ -31,6 +31,42 @@ insert into status_codes(code, name, description) values(226, "IM Used", "Respon
 -- 300's - Redirection
 --
 --
+insert into status_codes(code, name, description) values(300, "Multiple Choices", "Multiple options for the same resource, client can choose; example being a video that can be downloaded in multiple formats");
+insert into status_codes(code, name, description) values(301, "Moved Permanently", "This request and all futures should be directed to the given URI");
+insert into status_codes(code, name, description) values(302, "Found", "Superseeded by 303 and 307; essentially tells the client to look/browse to another URL");
+insert into status_codes(code, name, description) values(303, "See Other", "Response to the request can be found under another URL using a GET");
+insert into status_codes(code, name, description) values(304, "Not Modified", "The client already has the updated resource since the If-Modified-Since or If-None-Match headers and hence not re-sending");
+insert into status_codes(code, name, description) values(305, "Use Proxy", "Resource can only be accessed through the proxy given in the response");
+insert into status_codes(code, name, description) values(306, "Switch Proxy", "Not used; meant subsequent requests should use the specified proxy");
+insert into status_codes(code, name, description) values(307, "Temporary Redirect", "On this occassion the same request should be sent to another URI; however, future requests should hit the original URI");
+insert into status_codes(code, name, description) values(308, "Permanent Redirect", "This request and all the others to follow should be sent to another URI; some cases will be forwarded with a success");
+
+--
+--
+-- 400's - Client Errors
+--
+--
+insert into status_codes(code, name, description) values(, "", "");
+insert into status_codes(code, name, description) values(, "", "");
+insert into status_codes(code, name, description) values(, "", "");
+insert into status_codes(code, name, description) values(, "", "");
+insert into status_codes(code, name, description) values(, "", "");
+insert into status_codes(code, name, description) values(, "", "");
+insert into status_codes(code, name, description) values(, "", "");
+insert into status_codes(code, name, description) values(, "", "");
+insert into status_codes(code, name, description) values(, "", "");
+insert into status_codes(code, name, description) values(, "", "");
+
+--
+--
+-- 500's - Server Errors
+--
+--
+insert into status_codes(code, name, description) values(, "", "");
+insert into status_codes(code, name, description) values(, "", "");
+insert into status_codes(code, name, description) values(, "", "");
+insert into status_codes(code, name, description) values(, "", "");
+insert into status_codes(code, name, description) values(, "", "");
 insert into status_codes(code, name, description) values(, "", "");
 insert into status_codes(code, name, description) values(, "", "");
 insert into status_codes(code, name, description) values(, "", "");
