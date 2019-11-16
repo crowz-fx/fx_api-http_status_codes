@@ -40,7 +40,7 @@ def generate_new_session_connector():
     return Session()
 
 # main route for the home page
-@app.route('/http-status/info')
+@app.route('/api/http-status/info')
 def info():
     return render_template('info.html')
 
