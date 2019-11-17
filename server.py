@@ -24,8 +24,8 @@ for arg in sys.argv:
         host_ip = arg.split("=")[1]
 
 # setup variables for locations
-base_dir = os.getcwd()
-sqlite_url = "sqlite:///database/status-codes.db"
+base_dir = os.path.abspath(os.path.dirname(__file__))
+sqlite_url = "sqlite:///" + base_dir + "/database/status-codes.db"
 sqlalchemy_engine_echo = debug_through_app
 
 # setup the application, create the db connection and marshmallow
@@ -46,5 +46,5 @@ def info():
 
 # start up of the server app instance
 if __name__ == '__main__':
-    app.add_api(base_dir + 'swagger.yml')
+    app.add_api(base_dir + '/swagger.yml')
     app.run(debug = debug_through_app, host = host_ip, port = port)
