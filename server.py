@@ -12,7 +12,7 @@ host_ip = '0.0.0.0'
 port = 5000
 
 if len(sys.argv) > 1 and sys.argv[1] == "--help":
-    print("Usage: --debug-mode --port=<int> --hoste=\"<string>\"")
+    print("Usage: --debug-mode --port=<int> --host=\"<string>\"")
     sys.exit(1)
 
 for arg in sys.argv:
