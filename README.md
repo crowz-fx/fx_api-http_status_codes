@@ -25,9 +25,10 @@ pip install -r requirements.txt
 ## Running the server
 In order to run the server the following parameters can be accepted or omitted in any combination;
 ```
-# --debug-mode      ;; default = false     ;; enable debugging of Flask, SQLAlchemy and SQLite
-# --port=<int>      ;; default = 5000      ;; integer to run the application using that port
-# --host="<string>" ;; default = "0.0.0.0" ;; string to use as the host
+# --debug-mode       ;; default = false     ;; enable debugging of Flask, SQLAlchemy and SQLite
+# --port=<int>       ;; default = 5000      ;; integer to run the application using that port
+# --host="<string>"  ;; default = "0.0.0.0" ;; string to use as the host
+# --ga-version=<int> ;; default = 1         ;; version of the google analytics API to use
 
 python --debug-mode --port=<int> --host="<string>" server.py
 ```
