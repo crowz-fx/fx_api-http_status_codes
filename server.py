@@ -18,7 +18,7 @@ ga_version = "1"
 ga_id = ""
 
 if len(sys.argv) > 1 and sys.argv[1] == "--help":
-    print("Usage: --debug-mode --port=<int> --host=\"<string>\" --ga-version=<int> --ga-id=\"<sring>\"")
+    print("Usage: --debug-mode --port=<int> --host=\"<string>\" --ga-version=<int> --ga-id=\"<string>\"")
     sys.exit(1)
 
 for arg in sys.argv:
