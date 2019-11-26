@@ -7,6 +7,8 @@ __pycache__/
 *.so
 *.exe
 .vscode/
+.DS_Store
+env-mac/
 
 # Distribution / packaging
 .Python
