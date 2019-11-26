@@ -1,7 +1,7 @@
 swagger: "2.0"
 info:
     description: "API that describes and serves all of the HTTP status codes"
-    version: "0.0.1"
+    version: "v1"
     title: "CrowzFX HTTP Status Codes API"
 consumes:
     - "application/json"
