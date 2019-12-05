@@ -33,6 +33,6 @@ In order to run the server the following parameters can be accepted or omitted i
 
 python --debug-mode --port=<int> --host="<string>" --ga-version=<int> --ga-id="<string>" server.py
 ```
-
+ 
 [1]: https://crowzfx.co.uk/api/http-status/info
 [2]: https://crowzfx.co.uk/api/http-status/v1/ui/
