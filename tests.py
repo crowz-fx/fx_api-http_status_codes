@@ -5,7 +5,7 @@ except ImportError:
 
 class StatusAPITests(unittest.TestCase):
     def test_true(self):
-        self.assertTrue(True)
+        self.assertTrue(False)
 
 if __name__ == "__main__":
     unittest.main()
