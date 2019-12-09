@@ -1,17 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if IE 7 ]><html lang="en-GB" class="no-js ie7"><![endif]-->
+<!--[if IE 8 ]><html lang="en-GB" class="no-js ie8"><![endif]-->
+<!--[if !(IE 7) | !(IE 8)]><!-->
+<html lang="en-GB"><!--<![endif]-->
 <head>
     <meta charset="UTF-8">
     <title>HTTP Status Codes API | CrowzFX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="/static/css/styles.css"/>
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ ga_id }}"></script>
+    <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', '{{ ga_id }}');</script>
+    <meta name="author" content="Lui Crowie">
+    <meta name ="keywords" content="RESTful API http status codes json information">
+    <meta name ="description" content="A RESTful API that serves up HTTP status codes in JSON.">
 </head>
 <body>
     <h2>HTTP Status Codes API</h2>
-    <p>
-        1xx informational response – the request was received, continuing process<br>
-        2xx successful – the request was successfully received, understood and accepted<br>
-        3xx redirection – further action needs to be taken in order to complete the request<br>
-        4xx client error – the request contains bad syntax or cannot be fulfilled<br>
-        5xx server error – the server failed to fulfill an apparently valid request<br>
-    </p>
+    <div id="buttons">
+        <a href="{{ swagger_url }}">Swagger Definition</a>
+        <a href="https://github.com/crowz-fx/fx_api-http_status_codes">Github Repository</a>
+    </div>
+    <ul id="information-list">
+        <li><span id="number">1xx</span> - informational – the request was received, continuing process</li>
+        <li><span id="number">2xx</span> - successful – the request was successfully received, understood and accepted</li>
+        <li><span id="number">3xx</span> - redirection – further action needs to be taken in order to complete the request
+        <li><span id="number">4xx</span> - client error – the request contains bad syntax or cannot be fulfilled</li>
+        <li><span id="number">5xx</span> - server error – the server failed to fulfill an apparently valid request</li>
+    </ul>
 </body>
 </html>
