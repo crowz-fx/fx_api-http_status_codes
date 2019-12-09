@@ -7,12 +7,94 @@
     <meta charset="UTF-8">
     <title>HTTP Status Codes API | CrowzFX</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href="{{ url_for('static', filename='css/styles.css') }}"/>
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ ga_id }}"></script>
     <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', '{{ ga_id }}');</script>
     <meta name="author" content="Lui Crowie">
     <meta name ="keywords" content="RESTful API http status codes json information">
     <meta name ="description" content="A RESTful API that serves up HTTP status codes in JSON.">
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        *, :before, :after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            width: 100vw;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1em;
+            color: #fff;
+            background-color: #3498db;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 10px;
+            font-size: 1.8em;
+        }
+
+        div#buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: 10px auto;
+        }
+
+        div#buttons > a {
+            display: block;
+            text-decoration: none;
+            background-color: orange;
+            min-height: 30px;
+            margin: 5px;
+            padding: 10px;
+            color: #fff;
+            text-align: center;
+            border: 2px solid black;
+        }
+
+        div#buttons > a:hover {
+            color: #000;
+            background-color: white;
+        }
+
+        ul#information-list {
+            justify-content: center;
+            text-align: center;
+            margin: 0 auto;
+            list-style: none;
+            
+        }
+
+        ul#information-list > li {
+            padding: 4px;
+        }
+
+        span#number {
+            color: #000;
+        }
+
+        @media all and (max-width: 780px) {
+            ul#information-list {
+                margin: 5px;
+                text-align: left;
+            }
+
+            div#buttons {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 <body>
     <h2>HTTP Status Codes API</h2>
