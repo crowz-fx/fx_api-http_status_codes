@@ -29,7 +29,7 @@ In order to run the server the following parameters can be accepted or omitted i
 # --port=<int>       ;; default = 5000      ;; integer to run the application using that port
 # --host="<string>"  ;; default = "0.0.0.0" ;; string to use as the host
 # --ga-version=<int> ;; default = 1         ;; version of the google analytics API to use
-# --ga-id="<string>"  ;; default = ""        ;; tracking ID used in google analytics API
+# --ga-id="<string>" ;; default = ""        ;; tracking ID used in google analytics API
 
 python --debug-mode --port=<int> --host="<string>" --ga-version=<int> --ga-id="<string>" server.py
 ```
