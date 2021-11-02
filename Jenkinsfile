@@ -1,0 +1,1 @@
+dockerBuildPipeline([name: "http-status-api", from: "python:stable"])

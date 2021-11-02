@@ -1,6 +1,5 @@
 ARG FROM_IMAGE
-ARG IMG_TYPE
-FROM ${FROM_IMAGE}:${IMG_TYPE}
+FROM ${FROM_IMAGE}
 
 WORKDIR /opt/applications/executables/http-status-api
 
