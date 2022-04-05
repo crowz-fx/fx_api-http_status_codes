@@ -22,4 +22,4 @@ RUN python3.7 -m pip install -U pip setuptools wheel
 
 RUN python3.7 -m pip install -r requirements.txt
 
-CMD ["python3", "server.py", "--port=5001", "--ga-id='G-D1FW7EL3ZM'"]
+CMD ["python3.7", "server.py", "--port=5001", "--ga-id='G-D1FW7EL3ZM'"]
