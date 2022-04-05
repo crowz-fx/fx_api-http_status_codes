@@ -12,6 +12,12 @@ ADD database/* database/
 ADD templates/ templates/
 ADD swagger.yml .
 
-RUN pip3 install -r requirements.txt
+RUN apt-get update -y && apt-get install --no-install-recommends -y \
+  python3.7 \
+  && rm -rf /var/lib/apt/lists/*
 
-CMD ["python3", "server.py", "--port=5001", "--ga-id='UA-81180399-1'"]
+RUN python3.7 -m pip install pip
+
+RUN python3.7 -m pip install -r requirements.txt
+
+CMD ["python3", "server.py", "--port=5001", "--ga-id='G-D1FW7EL3ZM'"]
