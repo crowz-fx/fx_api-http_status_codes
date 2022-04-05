@@ -1,1 +1,1 @@
-dockerBuildPipeline([name: "http-status-api", from: "python:stable"])
+dockerBuildPipeline([name: "http-status-api", from: "python:stable", deployJob: "Docker-Deploy-Container"])
