@@ -18,7 +18,7 @@ RUN apt-get update -y && apt-get install --no-install-recommends -y \
 
 RUN python3.7 -m pip install pip
 
-RUN pip install -U pip setuptools wheel
+RUN python3.7 -m pip install -U pip setuptools wheel
 
 RUN python3.7 -m pip install -r requirements.txt
 
