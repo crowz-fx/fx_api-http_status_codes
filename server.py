@@ -61,7 +61,7 @@ def post_to_analytics(endpoint):
     requests.post(base_url)
 
 # main route for the home page
-@app.route("/api/http-status/info")
+@app.route("/info")
 def info():
     return render_template("info.html", ga_id = ga_id, swagger_url = api_version + "/ui")
 

@@ -7,7 +7,7 @@ consumes:
     - "application/json"
 produces:
     - "application/json"
-basePath: "/api/http-status/v1"
+basePath: "/v1"
 schemes:
     - "https"
     - "http"
