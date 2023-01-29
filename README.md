@@ -1,9 +1,8 @@
 # fx_api-http_status_codes   
 A Python webserver that serves up HTTP status codes on RESTful endpoints. The API is driven by a Swagger definition that uses connexion to handle the Swagger endpoint to the application endpoint.
 
-Link to hosted...
-- Information/entrypoint page --> [HERE][1]
-- Swagger definition --> [HERE][2]
+Link to hosted service:
+- Information/entrypoint page (including Swagger definition) --> [HERE][1]
 
 ## Python version
 Developed and run with Python3.7.
@@ -34,5 +33,4 @@ In order to run the server the following parameters can be accepted or omitted i
 python --debug-mode --port=<int> --host="<string>" --ga-version=<int> --ga-id="<string>" server.py
 ```
  
-[1]: https://crowzfx.co.uk/api/http-status/info
-[2]: https://crowzfx.co.uk/api/http-status/v1/ui/
+[1]: https://http-status-api.luicrowie.me/info
